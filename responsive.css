@@ -1,0 +1,132 @@
+/* Responsive design for the header */
+.header-container {
+    position: fixed;
+    top: -5px;
+    left: 0;
+    right: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .header-container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+  }
+  
+  /* Responsive design for desktop navbar */
+  .desktop-navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    /* Design for logo of the company */
+    /* Navbar element for computer screen */
+    /* Design for SVG images */
+    /* Responsive for SVG images */
+  }
+  .desktop-navbar-container .logo {
+    width: -moz-fit-content;
+    width: fit-content;
+    flex: 1;
+  }
+  .desktop-navbar-container .computer-pages-info {
+    flex: 3;
+  }
+  .desktop-navbar-container .computer-pages-info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .desktop-navbar-container .SVG-container {
+    display: flex;
+    flex-direction: row;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .desktop-navbar-container .SVG-container svg {
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    .desktop-navbar-container .SVG-container {
+      display: none;
+    }
+  }
+  
+  /* Design for mobile navbar */
+  .mobile-navbar-container {
+    width: 100%;
+    /* UL element design inside of mobile-navbar-container */
+  }
+  .mobile-navbar-container ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .mobile-navbar-container ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Animation for buttons */
+  #x-mark:hover, #hamburger:hover {
+    animation: button-animation 0.3s ease-in 0s 1 alternate both;
+  }
+  @keyframes button-animation {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  /* Animation for showing mobile navbar */
+  .show {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    transform: translateY(-100%);
+    animation: show-animation 0.3s linear 0s 1 alternate both;
+    opacity: 0;
+  }
+  
+  @keyframes show-animation {
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* Animation for hiding mobile navbar */
+  .hide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    transform: translateY(0);
+    animation: hide-animation 0.3s linear 0s 1 alternate both;
+    opacity: 1;
+  }
+  
+  @keyframes hide-animation {
+    100% {
+      transform: translateY(-125%);
+      opacity: 0;
+    }
+  }
+  /* Making SVGs and a-Hrefs in one row */
+  #mobile-navbar-ulElement {
+    position: relative;
+  }
+  #mobile-navbar-ulElement svg {
+    position: absolute;
+  }
+  
+  /* Making SVGs and a-Hrefs in one column */
+  #desktop-navbar-ulElement li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }/*# sourceMappingURL=responsive.css.map */

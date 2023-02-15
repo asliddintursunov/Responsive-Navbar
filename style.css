@@ -1,0 +1,97 @@
+* {
+    color: white;
+  }
+  
+  body {
+    background-image: linear-gradient(45deg, red, blue);
+    height: 2000px;
+  }
+  
+  .desktop-navbar-container, .mobile-navbar-container {
+    background-color: #192734;
+    padding: 15px;
+  }
+  
+  /* top-Border and all-Border are for designing desktop navbar */
+  .topBorder {
+    border-radius: 0px;
+  }
+  
+  .allBorder {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .mobile-navbar-container {
+    border-top: 1px solid rgb(151, 151, 151);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Design for logo */
+  .logo {
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  
+  #hamburger, #x-mark {
+    border-radius: 5px;
+  }
+  
+  #mobile-navbar-ulElement {
+    margin: 0px 10px;
+  }
+  #mobile-navbar-ulElement li {
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  #mobile-navbar-ulElement li:hover {
+    background-color: rgb(52, 52, 243);
+  }
+  #mobile-navbar-ulElement li svg {
+    margin-left: 10px;
+  }
+  
+  .desktop-navbar-container {
+    letter-spacing: 0.1em;
+  }
+  
+  #desktop-navbar-ulElement li {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  #desktop-navbar-ulElement li:hover {
+    background-color: rgb(52, 52, 243);
+  }
+  #desktop-navbar-ulElement li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 10%;
+    height: 5px;
+    background-color: rgb(73, 91, 255);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  
+  /* Responsive for mobile-navbar */
+  @media (min-width: 768px) {
+    #mobile-navbar-ulElement {
+      display: none;
+    }
+    .mobile-navbar-container {
+      padding: 0;
+      border: none;
+      opacity: 0;
+    }
+    .allBorder1 {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }/*# sourceMappingURL=style.css.map */
